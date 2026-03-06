@@ -4,6 +4,13 @@
 
 """Text tokenization utilities."""
 
+import nltk
+from pathlib import Path as _Path
+
+_BUNDLED_NLTK_DATA = str(_Path(__file__).parent.parent / "resources" / "nltk_data")
+if _BUNDLED_NLTK_DATA not in nltk.data.path:
+    nltk.data.path.insert(0, _BUNDLED_NLTK_DATA)
+
 from nltk.tokenize import TweetTokenizer, sent_tokenize
 
 
