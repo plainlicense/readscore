@@ -9,10 +9,8 @@ ty = "latest"
 typos = "latest"
 uv = "latest"
 "pipx:exportify" = "latest"
+"pipx:reuse" = "latest"
 bun = "latest"
 wrangler = "latest"
 node = "24"
-
-[tools."pipx:reuse"]
-version = "latest"
 python = "3.13"
